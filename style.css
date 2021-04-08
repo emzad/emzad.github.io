@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+}
+
+
+@media (max-width: 600px)
+{
+    body {
+        background-color: skyblue;
+    }
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: rgb(70, 70, 70);
+}
