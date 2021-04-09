@@ -1,3 +1,8 @@
+html a {
+    color: black;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,21 +10,63 @@ body {
 
 #navbar {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.76);
+    background-color: rgb(0, 0, 0);
     width: 100vw;
     left: 0px;
     top: 0px;
+    height: 5%;
+    border-style: outset;
+    color: white;
+    z-index: 1;
 }
 
-
-@media (max-width: 600px)
-{
-    body {
-        background-color: skyblue;
-    }
+#navbar a {
+    color: white;
+    text-decoration: none;
 }
+
 
 #welcome-section {
-    height: 100vh;
+    left: 0px;
+    top: 0px;
     background-color: rgb(70, 70, 70);
 }
+
+
+.welcome-section {
+    height: 130vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 2fr;
+}
+
+.salutation {
+    margin-top: 50vh;
+    position: absolute;
+    width: 100%;
+    margin-left: 100vw;
+}
+
+.welcome-body {
+    margin-top: 60vh;
+    position: absolute;
+    width: 100%;
+    margin-left: 100vw;
+}
+
+
+.welcome-section h1 {
+    font-family: 'Gruppo', 'Forum', cursive;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    text-shadow: rgb(0, 0, 0) 5px -2px 3px; 
+}
+
+
+@media (min-width: 400px) { .welcome-section h1 {font-size: large; } }
+@media (min-width: 600px) { .welcome-section h1 {font-size: larger; } }
+@media (min-width: 800px) { .welcome-section h1 {font-size: x-large; } }
+@media (min-width: 1000px) { .welcome-section h1 {font-size: xx-large;} .welcome-body { margin-top: 65vh; } }
+@media (min-width: 1400px) { .welcome-section h1 {font-size: 50px;} .welcome-body { margin-top: 67vh; } }
+@media (min-width: 1800px) { .welcome-section h1 {font-size: 75px;} .welcome-body { margin-top: 70vh; } }
+
+
