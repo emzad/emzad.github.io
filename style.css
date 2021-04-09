@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: sticky;
 }
 
 #navbar {
@@ -15,17 +16,42 @@ body {
     width: 100vw;
     left: 0px;
     top: 0px;
-    height: 5%;
-    border-style: outset;
+    height: 6%;
     color: white;
     z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #navbar a {
     color: white;
     text-decoration: none;
+    font-size: large;
+    font-family: 'Gruppo', 'Forum', cursive;
 }
 
+#navbar a:hover {
+    color:tan;
+}
+
+#logo {
+    padding-left: 10px;
+    font-family: 'Beth Ellen', cursive;
+    font-size: x-large;
+    order: 1;
+}
+
+#navLinks {
+    order: 2;
+    padding-right: 10px;
+    align-self: center;
+}
+
+#hamburger {
+    order: 3;
+}
 
 #welcome-section {
     left: 0px;
@@ -38,7 +64,6 @@ body {
     height: 130vh;
     display: grid;
     grid-template-rows: 2fr 1fr 2fr 2fr;
-    overflow-x: hidden;
 }
 
 .salutation {
@@ -49,7 +74,7 @@ body {
 }
 
 .welcome-body {
-    margin-top: 60vh;
+    margin-top: 55vh;
     position: absolute;
     width: 100%;
     margin-left: 100vw;
