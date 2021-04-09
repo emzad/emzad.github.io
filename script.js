@@ -19,6 +19,11 @@
 
 */
 
+// Added for Safari issue 
+$('body .safarilock').bind("touchmove", {}, function(event){
+  event.preventDefault();
+});
+
 window.addEventListener("scroll", function(event) {
   
     var top = this.scrollY;
