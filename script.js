@@ -1,7 +1,3 @@
-/* Added for Safari issue 
-$('body .safarilock').bind("touchmove", {}, function(event){
-  event.preventDefault();
-});*/
 
 window.addEventListener("scroll", function(event) {
   
@@ -12,6 +8,7 @@ window.addEventListener("scroll", function(event) {
         $("div").filter(".salutation").css("position", "absolute").css("margin-left", (105-(top/1.25)) + "vw");
         $("div").filter(".welcome-body").css("position", "absolute").css("margin-left", (110-(top/1.25)) + "vw");
     }
+
 
 
 }, false);
