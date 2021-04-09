@@ -54,14 +54,20 @@ body {
 }
 
 #welcome-section {
-    left: 0px;
-    top: 0px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 15px;
+
+    border-image: linear-gradient(to bottom, rgb(0,0,0), rgb(255,255, 255));
     background-color: rgb(70, 70, 70);
 }
 
 
 .welcome-section {
+    position:sticky;
     height: 130vh;
+    left: 0px;
+    top: 0px;
     display: grid;
     grid-template-rows: 2fr 1fr 2fr 2fr;
 }
@@ -97,4 +103,12 @@ body {
 @media (min-width: 1400px) { .welcome-section h1 {font-size: 55px;} .welcome-body { margin-top: 63vh; } }
 @media (min-width: 1800px) { .welcome-section h1 {font-size: 75px;} .welcome-body { margin-top: 65vh; } }
 
+#project {
+    height: 100vh;
+}
 
+
+.footer {
+    font-family: 'Gruppo', 'Forum', cursive;
+    font-weight: bolder;
+}
