@@ -1,28 +1,7 @@
-/*
-    Eventually make the size of the font, and the space between fonts, scale with the size of the view port.
-
-    function scaleFontSize(x) {
-        if (x.matches) {
-            >> Identify element and change size...           
-        }
-        else if (x.matches)
-    }
-
-    var w = window.matchMedia("(max-width: 600px)");
-    scaleFontSize(w);
-    w.addListener(scaleFontSize);
-    var frameHeight = window.innerHeight;
-    var frameWidth = window.innerWidth;
-
-    
-    }
-
-*/
-
-// Added for Safari issue 
+/* Added for Safari issue 
 $('body .safarilock').bind("touchmove", {}, function(event){
   event.preventDefault();
-});
+});*/
 
 window.addEventListener("scroll", function(event) {
   
