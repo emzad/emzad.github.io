@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Resume Builder</title>
+        <meta charset="utf-8" />
+        <style>
+            p {
+                font-family: Tahoma;
+                font-weight:bold;
+            }
+
+            label {
+                display: block;
+                position:relative;
+                padding-left: 0px;
+            }
+
+            
+        </style>
+    </head>
+
+    <body onload="classStudent()">
+        <div id="classStudentHeading"></div>
+        
+        <hr />
+        
+        <form id="buildForm" name="buildForm">
+            
+            <p>
+                <label for="fullName">Full Name: </label>
+                <input type="text" name="fullName" id="fullName" style="width:300px" />
+            </p>
+            <p>
+                <label for="fullAddress">Address: </label>
+                <input type="text" name="fullAddress" id="fullAddress" style="width:500px" />
+            </p>
+            <p>
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="text" name="phoneNumber" id="phoneNumber" />
+            </p>
+            <p>
+                <label for="emailAddress">Email Address:</label>
+                <input type="text" name="emailAddress" id="emailAddress" style="width:300px" />
+            </p>
+            <p>
+                <label for="personalData">Personal Information:</label>
+                <textarea name="personalData" id="personalData" cols="100" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="careerObjective">Career Objectives/Position:</label>
+                <textarea name="careerObjective" id="careerObjective" cols="100" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="edExp">Educational Background:</label>
+                <textarea name="edExp" id="edExp" cols="100" rows="10"></textarea>
+            </p>
+            <p>
+
+            </p>
+            <p>
+                <label for="jobOne">Most Recent Emplyment:</label>
+                Date Started: <input type="date" id="jobOneStart" name="jobOneStart"> Date Ended: <input type="date" name="jobOneEnd" id="jobOneEnd"><br />
+                <textarea name="jobOne" id="jobOne" cols="100" rows="10"></textarea>
+            </p>     
+            <p>
+                <label for="jobTwo">Second Most Recent Emplyment:</label>
+                Date Started: <input type="date" name="jobTwoStart" id="jobTwoStart"> Date Ended: <input type="date" name="jobTwoEnd" id="jobTwoEnd"><br/>
+                <textarea name="jobTwo" id="jobTwo" cols="100" rows="10"></textarea>
+            </p> 
+            <p>
+                <label for="jobThree">Third Most Recent Emplyment:</label>
+                Date Started: <input type="date" name="jobThreeStart" id="jobThreeStart"> Date Ended: <input type="date" name="jobThreeEnd" id="jobThreeEnd"><br /> 
+                <textarea name="jobThree" id="jobThree" cols="100" rows="10"></textarea>
+            </p>   
+            <p>
+                <label for="jobRef">Professional References:</label>
+                <textarea name="jobRef" id="jobRef" cols="100" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="button" value="Create Resume" id="startBuildButton"/>
+            </p>      
+
+
+        </form>
+        
+        
+        <script src="resume_project.js"></script>
+
+
+    </body>
+</html>
