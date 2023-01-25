@@ -48,7 +48,7 @@ body {
     #navLinks {
         order: 2;
         padding-right: 10px;
-        align-self: center;
+        align-self: right;
     }
 
     #hamburger {
