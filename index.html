@@ -1,67 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Oswald:300,400,500,600,700|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
-   <title>Slideshow</title>
-</head>
-<body>
 
-   <div class="container">
-      <div class="banner">
-            <h1>FadeAwaySlide</h1>
-            <button type="button">Start Slideshow</button>
-      </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Jetton</title>
+    
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600|Montserrat:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
   
 
-   <div class="slideshow-wrapper">
-      <div class="slideshow">
-         <div class="slide">
-            <div class="content">
-            <h3>London</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Labore amet tenetur ea.
-               Illo neque, eaque, fuga, porro amet quae laudantium aut ipsa minima sit molestiae...
-            </p>
-            <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
-            </div>
-         </div>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    
+</head>
 
-         <div class="slide">
-            <div class="content">
-            <h3>New York</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Labore amet tenetur ea.
-               Illo neque, eaque, fuga, porro amet quae laudantium aut ipsa minima sit molestiae...
-            </p>
-            <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
-            </div>
-         </div>
 
-         <div class="slide">
-            <div class="content">
-            <h3>Rome</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Labore amet tenetur ea.
-               Illo neque, eaque, fuga, porro amet quae laudantium aut ipsa minima sit molestiae...
-            </p>
-            <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
-            </div>
-         </div>
+<body>
 
-         <div class="slide">
-            <div class="content">
-            <h3>Tokyo</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. Labore amet tenetur ea.
-               Illo neque, eaque, fuga, porro amet quae laudantium aut ipsa minima sit molestiae...
-            </p>
-            <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
+    <header>
+        <nav id="navbar">
+           <div id="logo">Justin Jetton</div>
+           <div id="navLinks">
+               <a>About</a> | 
+               <a href="#project">Projects</a> |
+               <a id="profile-link" target="blank" href="https://github.com/emzad/"> GitHub </a>
             </div>
-         </div>
-      </div>
-   </div>
-</div>
-   <script src="app.js"></script>
+            <div id="hamburger"></div>
+        </nav>
+
+    <!-- THIS AREA WILL EVENUTALLY HAVE A SELECTION OF 'CARDS' THAT THE USER CAN SELECT TO CHANGE THE
+        THEME OF THE SITE: Fantasy, Steam Punk, Cyber Punk, etc.
+        <div class="style-wrap">
+            <div class="style-choice">
+                <p class="cyber-punk">Cyber Punk</p>
+                <img src="images/cyberpunk.png">
+                <p></p>
+            </div>
+
+        </div>
+    -->
+
+    </header>
+
+
+
+    
+<main class="main">
+
+        <section class="welcome-section" id="welcome-section">
+            <div></div>
+            <div class="salutation" id="salutation"><h1>Greetings!  I am Justin,</h1></div>    
+            <div class="welcome-body"><h1>Welcome to my little piece of the internet.</h1></div>
+            <div class="fade-out"></div>
+        </section>
+
+
+        <section id="project" class="project-area">
+
+            <div class="cards-wrapper">
+                <div class="card">
+                   <img src="tolkien_tribute/card-background.PNG" class="image-top" />
+                   <h1 class="fullname">Tribute Page: J.R.R. Tolkien</h1>
+                   <p class="scope">HTML, CSS</p>
+                   <p class="about-project">A tribute page to J.R.R. Tolkein. I was attempting to recreate the feeling of a late '90s personal website. Project inspired by FreeCodeCamp.org</p>
+                   <button type="button" style="background-color: tan; color: black;"><a href="tolkien_tribute/tolkien_tribute.html" target="_blank">Open Project</a></button>
+                </div>
+            
+       
+                <div class="card">
+                   <img src="change_calculator/card-background.PNG" class="image-top" />
+                   <h1 class="fullname">Change Calculator</h1>
+                   <p class="scope">HTML, JavaScript</p>
+                   <p class="about-project">A simple app that converts less than a dollar into change.</p>
+                   <button type="button"><a href="change_calculator/change_calculator.html" target="_blank">Open Project</a></button>
+                </div>
+       
+       
+       
+                <div class="card">
+                   <img src="resume_builder/card-background.PNG" class="image-top" />
+                   <h1 class="fullname">Resume Builder</h1>
+                   <p class="scope">HTML, JavaScript</p>
+                   <p class="about-project">Always the hardest part of finding a new job... Creating the resume. Class project for WEB </p>
+                   <button type="button"><a href="resume_builder/resume_builder.html" target="_blank">Open Project</a></button>
+                </div>
+             </div>
+       
+       
+          </div>
+
+        </section>
+        
+
+
+    </main>    
+
+
+        <footer class="footer">
+            <div style="float: left;">
+                &copy; 2021 - Justin Jetton
+            </div>
+            <div style="float: right;">
+                <a href="#" class="backToTop" >[ Back to Top ]</a>
+            </div>
+            </footer>
+
 </body>
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
