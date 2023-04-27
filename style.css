@@ -153,8 +153,14 @@ END STYLE CHOICE AREA FOR SITE*/
 
 /* SECTION FOR STYLING PROJECT AREA */
 
+.project-area-start {
+    margin-top: 120px;
+    width: 80%;
+    margin-left: 10%;
+}
 
 .cards-wrapper {
+    margin-top: 65px;
     width: 80%;
     display: flex;
     justify-content: space-evenly;
