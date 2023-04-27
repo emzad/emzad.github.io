@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Fandom Survey</title>
+    <link rel="stylesheet"  href="sw_style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Star Wars Fandom Survey</h1>
+        <p id="description">What sort of Star Wars fan are you? Take our survey so we can better understand the people within our fandom galaxy!</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <p>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Example: Nutmeg Windu" required/>
+            </p>
+
+            <p>
+                <label for="email" id="email-label">Email:</lable>
+                <input type="email" area-describtedby="email-example"  name="email" id="email" placeholder="Example: may-fourth@starmail.com" required/>
+            </p>
+
+            <p>
+                <label for="number" id="number-label">How would you rate Star Wars as a franchise:</label>
+                <input type="number" area-describtedby="number-example" name="fav-number" min="0" max="10" placeholder="Example: 0 : Abhor it / 10 : Devoted acolyte"/>
+            </p>
+
+           <hr />
+
+           <p>
+                <label for="fav-episode-label">Which is your favorite Star Wars Episode:</label>
+                <select name="dropdown" name="favorite-episode">
+                    <option value="Episode One">Episode I: The Phantom Menace</option>
+                    <option value="Episode Two">Episode II: The Attack of the Clones</option>
+                    <option value="Episode Three">Episode III: Revenge of the Sith</option>
+                    <option value="Episode Four">Episode IV: A New Hope</option>
+                    <option value="Episode Five">Episode V: The Empire Strikes Back</option>
+                    <option value="Episode Six">Episode VI: The Return of the Jedi</option>
+                    <option value="Episode Seven">Episode VII: The Force Awakens</option>
+                    <option value="Episode Eight">Episode VIII: The Last Jedi</option>
+                    <option value="Episode Nine">Episode IX: The Rise of Skywalker</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="shot-first-label">Hans:</label>
+                <input type="radio" name="shot-first" value="Shot First" /> Shot First
+                <input type="radio" name="shot-first" value="Shote Second" /> Shot Second
+            </p>
+
+            <p>
+                <label for="midi-chlorian-label">Midi-chlorians:</label> <br />
+                <input type="radio" name="midi-chlorians" value="Biological Indicator"/> Are a Biological Indication of One's Influence within the Force <br />
+                <input type="radio" name="midi-chlorians" value="Force Parasite"/> Are Force Parasites, Misconstrude as Indicating One's Power Level within the Force <br/>
+                <input type="radio" name="midi-chlorians" value="Just Ignore" /> Should Just Be Ignored - Nothing Good Comes from Justifying Poor Creative Choices <br />
+            </p>
+
+            <p>
+                Which of these Star Wars series have you seen:</label>
+            </p>
+            <p>
+                <input type="checkbox" id="episode-one" name="episode-one" value="Episode One"><label for="episode-one">Episode I: The Phantom Menace</label><br/>
+                <input type="checkbox" id="episode-two" name="episode-two" value="Episode Two"><label for="episode-two">Episode II: The Attack of the Clones</label><br/>
+                <input type="checkbox" id="clone-wars-movie" name="clone-wars-movie" value="Clone Wars Movie"><label for="clone-wars-movie">Star Wars: Clone Wars (Movie)</label><br/>
+                <input type="checkbox" id="clone-wars" name="clone-wars" value="Clone Wars"><label for="clone-wars">Star Wars: Clone Wars (Series)</label><br/>
+                <input type="checkbox" id="episode-three" name="episode-three" value="Episode Three"><label for="episode-three">Episode III: Revenge of the Sith</label><br/>
+                <input type="checkbox" id="bad-batch" name="bad-batch" value="Bad Batch"><label for="bad-batch">The Bad Batch</label><br/>
+                <input type="checkbox" id="solo" name="solo" value="Solo"><label for="solo">Solo: A Star Wars Story</label><br/>          
+                <input type="checkbox" id="rebels" name="rebels" value="Rebels"><label for="rebels">Star Wars: Rebels</label><br/>
+                <input type="checkbox" id="rogue-one" name="rogue-one" value="Rogue One"><label for="rogue-one">Rogue One: A Star Wars Story</label><br/>
+                <input type="checkbox" id="episode-four" name="episode-four" value="Episode Four"><label for="episode-four">Episode IV: A New Hope</label><br/>
+                <input type="checkbox" id="episode-five" name="episode-five" value="Episode Five"><label for="episode-five">Episode V: The Empire Strikes Back</label><br/>
+                <input type="checkbox" id="episode-six" name="episode-six" value="Episode Six"><label for="episode-six">Episode VI: The Return of the Jedi</label><br/>
+                <input type="checkbox" id="mandalorian" name="mandalorian" value="Mandalorian"><label for="mandalorian">The Mandalorian</label><br/>
+                <input type="checkbox" id="boba-fett" name="boba-fett" value="Boba Fett"><label for="boba-fett">The Book of Boba Fett</label><br/>
+                <input type="checkbox" id="resistance" name="resistance" value="Resistance"><label for="resistance">Star Wars Resistance</label><br/>
+                <input type="checkbox" id="episode-seven" name="episode-seven" value="Episode Seven"><label for="episode-seven">Episode VII: The Force Awakens</label><br/>
+                <input type="checkbox" id="episode-eight" name="episode-eight" value="Episode Eight"><label for="episode-eight">Episode VIII: The Last Jedi</label><br/>
+                <input type="checkbox" id="episode-nine" name="episode-nine" value="Episode Nine"><label for="episode-nine">Episode IX: The Rise of Skywalker</label><br/>
+            </p>
+
+            <p>
+                What is an experience you have had with Star Wars that you would like to share:
+            </p>
+            <p>
+                <textarea name="share-experience" id="share-experience" cols="100" rows="12"></textarea>
+            </p>
+
+
+            <p>
+                <input type="submit" value="Submit Survey" id="submit"/>
+            </p>   
+
+
+
+        </form>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+body {
+    background-image: url(https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260), linear-gradient(to bottom, rgba(255, 255, 255, .75), rgba(255, 255, 255, .75));
+    background-blend-mode: lighten;
+    background-size: 100vw;
+}
+
+
+
+
