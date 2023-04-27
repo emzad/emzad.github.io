@@ -28,104 +28,83 @@
     <header>
         <nav id="navbar">
            <div id="logo">Justin Jetton</div>
-           <div id="navLinks">
-               <a>About</a> | 
-               <a href="#project-area-start">Projects</a> |
-               <a id="profile-link" target="blank" href="https://github.com/emzad/"> GitHub </a>
-            </div>
-            <div id="hamburger"></div>
         </nav>
-
-    <!-- THIS AREA WILL EVENUTALLY HAVE A SELECTION OF 'CARDS' THAT THE USER CAN SELECT TO CHANGE THE
-        THEME OF THE SITE: Fantasy, Steam Punk, Cyber Punk, etc.
-        <div class="style-wrap">
-            <div class="style-choice">
-                <p class="cyber-punk">Cyber Punk</p>
-                <img src="images/cyberpunk.png">
-                <p></p>
-            </div>
-
-        </div>
-    -->
-
     </header>
 
 
+<main class="main-wrapper">
+    <div class="all-sections-wrapper">
 
-    
-<main class="main">
-    
-     <!-- THIS AREA HAS A SLIDE IN GREETINGS, BUT I AM STILL NOT SURE IF I LIKE IT...
 
-        <section class="welcome-section" id="welcome-section">
-            <div></div>
-            <div class="salutation" id="salutation"><h1>Greetings!  I am Justin,</h1></div>    
-            <div class="welcome-body"><h1>Welcome to my little piece of the internet.</h1></div>
-            <div class="fade-out"></div>
-        </section>
-
--->
-
-        <div id="project-area-start" class="project-area-start">Projects</div>
-
-        <section id="project" class="project-area">
-
-            <div class="cards-wrapper">
-                <div class="card">
-                   <img src="tolkien_tribute/card-background.PNG" class="image-top" />
-                   <h1 class="fullname">Tribute Page: J.R.R. Tolkien</h1>
-                   <p class="scope">HTML, CSS</p>
-                   <p class="about-project">A tribute page to J.R.R. Tolkein. I was attempting to recreate the feeling of a late '90s personal website. Project inspired by FreeCodeCamp.org</p>
-                   <button type="button" style="background-color: tan; color: black;"><a href="tolkien_tribute/tolkien_tribute.html" target="_blank">Open Project</a></button>
-                </div>
-            
-       
-                <div class="card">
-                   <img src="change_calculator/card-background.PNG" class="image-top" />
-                   <h1 class="fullname">Change Calculator</h1>
-                   <p class="scope">HTML, JavaScript</p>
-                   <p class="about-project">A simple app that converts less than a dollar into change.</p>
-                   <button type="button"><a href="change_calculator/change_calculator.html" target="_blank">Open Project</a></button>
-                </div>
-       
-       
-       
-                <div class="card">
-                   <img src="resume_builder/card-background.PNG" class="image-top" />
-                   <h1 class="fullname">Resume Builder</h1>
-                   <p class="scope">HTML, JavaScript</p>
-                   <p class="about-project">Always the hardest part of finding a new job... Creating the resume. Class project for WEB </p>
-                   <button type="button"><a href="resume_builder/resume_builder.html" target="_blank">Open Project</a></button>
-                </div>
-       
-       
-             <div class="card">
-                   <img src="fade_away_slide/card-background.PNG" class="image-top" />
-                   <h1 class="fullname">Fade Away Slide</h1>
-                   <p class="scope">HTML, CSS, JavaScript</p>
-                   <p class="about-project">Project from an Udemy course on HTML, CSS, and Javascript ideas.</p>
-                   <button type="button"><a href="fade_away_slide/fade_away_slide.html" target="_blank">Open Project</a></button>
-                </div>
-             
-                
-             <div class="card">
-                   <img src="fandom_survey/card-background.PNG" class="image-top" />
-                   <h1 class="fullname">Fandom Survey</h1>
-                   <p class="scope">HTML, CSS</p>
-                   <p class="about-project">Form project for FreeCodeCamp.org</p>
-                   <button type="button"><a href="fandom_survey/star_wars.html" target="_blank">Open Project</a></button>
-                </div>
-                
-    
-    
-          </div>
-
-        </section>
+        <div class="section-wrapper">
         
+            <div class="project-card">
+                <img src="tolkien_tribute/card-background.PNG" class="project-card-image" />
+                <div class="card-content">
+                <h1 class="project-name">Tribute Page: J.R.R. Tolkien</h1>
+                <h2 class="project-scope">HTML, CSS</h2>
+                <h2 class="project-summary">A tribute page to J.R.R. Tolkein. I was attempting to recreate the feeling of a late '90s personal website. Project inspired by FreeCodeCamp.org</h2>
+                </div>
+                <div class="button-row">
+                <button type="button" style="background-color: tan; color: black;"><a href="tolkien_tribute/tolkien_tribute.html" target="_blank">Open Project</a></button>
+                </div>
+            </div>
+
+           <div class="project-card">
+                <img src="change_calculator/card-background.PNG" class="project-card-image" />
+                <div class="card-content">
+                <h1 class="project-name">Change Calculator</h1>
+                <h2 class="project-scope">HTML, JavaScript</h2>
+                <h2 class="project-summary">A simple app that converts less than a dollar into change.</h2>
+                </div>
+                <div class="button-row">
+                <button type="button"><a href="change_calculator/change_calculator.html" target="_blank">Open Project</a></button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="fade_away_slide/card-background.PNG" class="project-card-image" />
+                <div class="card-content">
+                <h1 class="project-name">Fade Away Slider</h1>
+                <h2 class="project-scope">HTML, CSS, JavaScript</h2>
+                <h2 class="project-summary">Project from an Udemy course on HTML, CSS, and Javascript ideas.</h2>
+                </div>
+                <div class="button-row">
+                <button type="button"><a href="fade_away_slide/fade_away_slide.html" target="_blank">Open Project</a></button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="resume_builder/card-background.PNG" class="project-card-image" />
+                <div class="card-content">
+                <h1 class="project-name">Resume Builder</h1>
+                <h2 class="project-scope">HTML, JavaScript</h2>
+                <h2 class="project-summary">Always the hardest part of finding a new job... Creating the resume. Class project for WEB 115.</h2>
+                </div>
+                <div class="button-row">
+                <button type="button"><a href="resume_builder/resume_builder.html" target="_blank">Open Project</a></button>
+                </div>
+            </div>
 
 
-    </main>    
+            <div class="project-card">
+                <img src="fandom_survey/card-background.PNG" class="project-card-image" />
+                <div class="card-content">
+                <h1 class="project-name">Fandom Survey</h1>
+                <h2 class="project-scope">HTML, CSS</h2>
+                <h2 class="project-summary">Form project for FreeCodeCamp.org</h2>
+                </div>
+                <div class="button-row">
+                <button type="button"><a href="fandom_survey/star_wars.html" target="_blank">Open Project</a></button>
+                </div>
+            </div>
 
+        </div> 
+
+
+    </div>
+</main>
+    
 
         <footer class="footer">
             <div style="float: left;">
@@ -139,5 +118,4 @@
 </body>
 
 <script type="text/javascript" src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
