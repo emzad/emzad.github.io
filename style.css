@@ -27,16 +27,6 @@ body {
         align-items: center;
     }
 
-    #navbar a {
-        color: white;
-        text-decoration: none;
-        font-size: large;
-        font-family: 'Gruppo', 'Forum', cursive;
-    }
-
-    #navbar a:hover {
-        color:tan;
-    }
 
     #logo {
         padding-left: 10px;
@@ -45,99 +35,13 @@ body {
         order: 1;
     }
 
-    #navLinks {
-        order: 2;
-        padding-right: 10px;
-        align-self: center;
-    }
-
-    #hamburger {
-        order: 3;
-    }
-
 /* END SECTION FOR STYLING NAV BAR */
 
 
-/* START EVENTUAL STYLE CHOICE AREA FOR SITE
-
-
-.style-wrap {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    width: 80%;
-    height: 250px;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.style-choice {
-    width: 200px;
-    height: 300px;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: space-evenly;
-    color: rgb(61, 241, 15);
-    border-radius: 25px;
-    
-}
-
-.style-choice  img {
-    width: 100px;
-    height: 100px;
-    background-color: #000;    
-}
-
-
-END STYLE CHOICE AREA FOR SITE*/
 
 
 
-/* SECTION FOR STYLING WELLCOME SECTION */
-
-    .welcome-section {
-        position: static;
-        height: 150vh;
-        left: 0px;
-        top: 0px;
-        display: grid;
-        grid-template-rows: 2fr 1fr 2fr 2fr;
-        background-color: rgb(70, 70, 70);
-    }
-
-    .salutation {
-        margin-top: 55vh;
-        position: absolute;
-        width: 100%;
-        margin-left: 100vw;
-    }
-
-    .welcome-body {
-        margin-top: 65vh;
-        position: absolute;
-        width: 100%;
-        margin-left: 100vw;
-    }
-
-    .fade-out {
-        margin-top: 120vh; 
-        position: absolute;
-        width: 100%;
-        height: 30vh;
-        background-image: linear-gradient(to bottom, rgb(70,70,70), rgb(255,255, 255));
-    }
-
-    .welcome-section h1 {
-        font-family: 'Gruppo', 'Forum', cursive;
-        color: rgb(255, 255, 255);
-        font-size: xx-small;
-        text-shadow: rgb(0, 0, 0) 5px -2px 3px; 
-    }
+/* SECTION FOR STYLING WELLCOME SECTION 
 
     @media (min-width: 200px) { .welcome-section h1 {font-size: x-small; } }
     @media (min-width: 300px) { .welcome-section h1 {font-size: small; } }
@@ -148,21 +52,16 @@ END STYLE CHOICE AREA FOR SITE*/
     @media (min-width: 1400px) { .welcome-section h1 {font-size: 55px;} .welcome-body { margin-top: 63vh; } }
     @media (min-width: 1800px) { .welcome-section h1 {font-size: 75px;} .welcome-body { margin-top: 65vh; } }
 
-/* END SECTION FOR STYLING WELLCOME SECTION */
+END SECTION FOR STYLING WELLCOME SECTION */
 
 
 /* SECTION FOR STYLING PROJECT AREA */
 
-.project-area-start {
+.section-wrapper {
     margin-top: 120px;
-    width: 80%;
-    margin-left: 10%;
-}
-
-.cards-wrapper {
-    margin-top: 65px;
-    width: 80%;
+    width: 90%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     position: relative;
     top: 25%;
@@ -170,75 +69,57 @@ END STYLE CHOICE AREA FOR SITE*/
     transform: translateX(-50%);
     border-radius: .25em;
     border: 2px solid rgb(70, 70, 70);
-    padding: 3em;
     background-image: url(images/wall.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0.80), rgba(255,255,255,.70));
     background-blend-mode: lighten;
 }
 
-.card {
-    width: 280px;
+.project-card {
+    margin: 1em 1em 1em 1em;
     background-color: #eee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 16em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto auto;
     justify-items: space-evenly;
     transition: transform .5s;
     border: 1px solid rgb(0, 0, 0);
     overflow: hidden;
 }
   
-.card:hover {
-    transform: scale(1.1);  
-}
-
-.image-top {
+.project-card-image {
+    grid-column: 1;
+    grid-row: 1/5;
     width: 100%;
-    height: 220px;
+    height: 16em;
     object-fit: cover;
-    clip-path: polygon(100% 0, 100% 76%, 50% 100%, 0 76%, 0 0);
+    clip-path: circle(100% at 0 50%)                      /*polygon(0 0, 30% 0, 100% 35%, 100% 70%, 30% 100%, 0 100%);*/
 }
 
-
-.profile-image {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    clip-path: circle(50% at 50% 50%);
-    margin-top: -110px;
-    z-index: 1;
-    border: 10px solid #eee;
-    border-radius: 50%;
+.card-content {
+    grid-column: 2;
+    grid-row: 1/4;
+    padding: 0 0 0 10px;
 }
 
-
-.card h1 {
+.project-card h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    color: #555;
-    margin: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
-.scope {
+.project-card h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #777;
-    font-weight: 300;
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
-.about-project {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 12px;
-    width: 90%;
-    margin: 10px;
-    font-style: italic;
-    color: #444;
-    text-align: center;
-    border-bottom: 1px solid #999;
-    padding-bottom: 20px;
+.button-row {
+    grid-column: 2;
+    grid-row: 4/5;
+    padding: 0 0 0 10px;
 }
 
-.card button {
-    width: 120 px;
-    padding: 7px;
+.project-card button {
+    width: 125 px;
+    padding: 10px;
     margin: 10px  0 20px 0;
     background-color: silver;
     border: none;
@@ -249,7 +130,7 @@ END STYLE CHOICE AREA FOR SITE*/
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-.card:hover button {
+.project-card:hover button {
     animation: buttonRotation 2s 2s linear;
 }
 
@@ -276,10 +157,6 @@ END STYLE CHOICE AREA FOR SITE*/
     95% {transform: scale(1.2) rotateZ(5deg)}
     100% {transform: scale(1) rotateZ(0)}
 }
-
-
-/* END SECTION FOR STYLING PROJECT AREA */
-
 
 
     .footer {
