@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.logo {
+    font-family: 'Beth Ellen', cursive;
+}
+
 li, a {
     list-style: none;
     text-decoration: none;
