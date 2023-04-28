@@ -73,6 +73,13 @@ END SECTION FOR STYLING WELLCOME SECTION */
     background-blend-mode: lighten;
 }
 
+.project-intro h1 {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 0.5em;;
+}
+
 .project-card {
     margin: 1em 1em 1em 1em;
     background-color: #eee;
