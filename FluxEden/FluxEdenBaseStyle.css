@@ -26,7 +26,7 @@ body {
 
 .navConsole {
     display: grid;
-    grid-template-columns: 2.25fr 1fr 1.30fr 1.70fr 2.50fr 0.25fr;
+    grid-template-columns: 2.20fr 1fr 1.30fr 1.70fr 1fr 1.80fr;
     grid-auto-rows: 0.50fr 1fr 1.75fr;
     grid-template-areas: 
         "logo lineLeft lineCenter lineRight . hamburger"
@@ -45,7 +45,7 @@ body {
 
 @media only screen and (min-width: 1225px) {
     [class*="navConsole"] {
-        grid-template-columns: 2fr 1.25fr 1.25fr 1.65fr 2.75fr 0.25fr;
+        grid-template-columns: 2fr 1.25fr 1.25fr 1.65fr 1fr 2fr;
       
     }
 }
@@ -53,21 +53,21 @@ body {
 
 @media only screen and (max-width: 800px) {
     [class*="navConsole"] {
-        grid-template-columns: 2.5fr 1fr 1.20fr 1.60fr 2.75fr 0.25fr;
+        grid-template-columns: 2.5fr 1fr 1.20fr 1.60fr 0.75fr 2.25fr;
       
     }
 }
 
 @media only screen and (max-width: 600px) {
     [class*="navConsole"] {
-        grid-template-columns: 2.8fr 1fr 1fr 1.40fr 2.55fr 0.25fr;
+        grid-template-columns: 2.8fr 1fr 1fr 1.40fr 0.55fr 2.25fr;
       
     }
 }
 
 @media only screen and (max-width: 400px) {
     [class*="navConsole"] {
-        grid-template-columns: 4fr 1fr 1fr 1fr 1.75fr 0.25fr;
+        grid-template-columns: 4fr 0fr 0fr 0.50fr 0.75fr 3.75fr;
       
     }
 }
