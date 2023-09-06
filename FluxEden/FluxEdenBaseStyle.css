@@ -110,6 +110,7 @@ body {
 
     .mainMenu {
         grid-area: hamburger;
+        justify-self: end;
         padding-right: 25px;
         padding-top: 10px;
     }
