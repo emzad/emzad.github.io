@@ -1,0 +1,338 @@
+body {
+    margin: 0px;    
+    background: url(pictures/viewport.jpg)  no-repeat top ;     /* Spaceship Viewport */
+    background-attachment: fixed;                               /* Locks the background in place during scrolling */
+    background-size: cover;                                     /* Works with the html mn-width. Resize to cover the entire container */
+    background-color: black;                                    /* Use this color after you scroll past the initial image */
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20vh 75vh 5vh;
+    grid-template-areas: 
+        "Nav Nav Nav"
+        "LeftSide Main RightSide"
+        "Footer Footer Footer";        
+}
+
+
+
+
+/******************************** BEGIN: STYLING FOR HEADER ********************************/
+
+.header {
+    grid-area: Nav;
+    padding-top: 0px;
+}
+
+.navConsole {
+    display: grid;
+    grid-template-columns: 2.25fr 1fr 1.30fr 1.70fr 2.50fr 0.25fr;
+    grid-auto-rows: 0.50fr 1fr 1.75fr;
+    grid-template-areas: 
+        "logo lineLeft lineCenter lineRight . hamburger"
+        "logo box1 box2 box3 . hamburger"
+        "logo menuArea menuArea menuArea . hamburger"
+}
+
+.logo {
+    grid-area: logo;
+    padding: 0px 0px 0px 0px;
+    background: url(pictures/logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+@media only screen and (min-width: 1225px) {
+    [class*="navConsole"] {
+        grid-template-columns: 2fr 1.25fr 1.25fr 1.65fr 2.75fr 0.25fr;
+      
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    [class*="navConsole"] {
+        grid-template-columns: 2.5fr 1fr 1.20fr 1.60fr 2.75fr 0.25fr;
+      
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="navConsole"] {
+        grid-template-columns: 2.8fr 1fr 1fr 1.40fr 2.55fr 0.25fr;
+      
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    [class*="navConsole"] {
+        grid-template-columns: 4fr 1fr 1fr 1fr 1.75fr 0.25fr;
+      
+    }
+}
+
+.lineLeft {
+    grid-area: lineLeft;
+}
+
+.lineCenter {
+    grid-area: lineCenter;
+}
+
+.lineRight {
+    grid-area: lineRight;
+}
+
+
+.box01 {
+    grid-area: box1;
+}
+
+.box02 {
+    grid-area: box2;
+}
+
+.box03 {
+    grid-area: box3;
+}
+
+.menuArea {
+    grid-area: menuArea;
+}
+
+
+
+
+
+
+/***** BEGIN: HAMBERGER MAIN MENU *****/
+
+    .mainMenu {
+        grid-area: hamburger;
+        padding-right: 25px;
+        padding-top: 10px;
+    }
+
+    /* CSS styled 'hamburger' to act as link for the 'menuLinks' */
+    .menuLines{
+        width: 25px; 
+        height: 5px; 
+        background-image: linear-gradient(to top right, rgb(134, 134, 134), rgb(0, 0, 0));
+        border-radius: 15%;
+        margin: 2px 0px 0px 0px;
+        z-index: 1;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        [class*="menuLines"] {
+          width: 40px;
+          height: 8px;
+        }
+    }
+
+    .menuLink {
+        visibility: hidden;        
+    }
+
+    .menuLink:hover {
+        color:  rgb(220, 220, 220);        
+    }
+
+    /* Fun Idea... but may scrap? */
+    .secretAudio:hover {
+        background-image: linear-gradient(to top right, rgba(200, 200, 200, 0.75), rgb(0, 0, 0));
+    }
+
+    .menuLines a {
+        font-family: 'Syne Mono', monospace;
+        color:rgb(175, 175, 175);
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: rgb(0, 0, 0) -1px 2px 2.5px;
+    }    
+
+    @keyframes menuLinkVisibile {
+        from {visibility: visible;}
+        to {visibility: visible;}
+        }
+
+    .expandingMenuLine:hover {
+        padding: 5px 0px 0px 4px;
+        margin-left: -27px;
+        width: 80px;
+        height: 65px;
+        border-radius: 10%;
+        background-image: linear-gradient(to top right, rgba(134, 134, 134, 0.8), rgb(0, 0, 0, 0.8));
+        z-index: 2;
+        transition: all 0.57s linear; 
+    }
+    
+    /* Hovering over .expandingMenuLine will also cause the .menuLink to become visible. */
+    .expandingMenuLine:hover .menuLink {    
+        animation-delay: 0.62s;    
+        animation-name: menuLinkVisibile;
+        animation-duration: 3600s;
+        animation-iteration-count: 1;
+        animation-timing-function: 1s ease-in ;
+        z-index: 1;
+    }
+
+    .expandingMenuLine {
+        background-image: linear-gradient(to top right, rgba(134, 134, 134, 1), rgb(0, 0, 0, 1));
+        transition: all 0.57s linear;
+    }
+
+    /***** END: HAMBERGER MAIN MENU *****/
+
+/******************************** END: STYLING FOR HEADER ********************************/
+
+
+
+
+
+
+/******************************** BEGIN: STYLING FOR MAIN ********************************/
+
+.leftSide {
+    grid-area: LeftSide;
+}
+
+.main {
+    grid-area: Main;
+}
+
+.rightSide {
+    grid-area: RightSide;
+}
+
+/******************************** BEGIN: STYLING FOR MAIN ********************************/
+
+
+
+
+
+
+
+/******************************** BEGIN: STYLING FOR FOOTER ********************************/
+
+.footer {
+    grid-area: Footer;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(247, 247, 247, 0.507));
+    border-style: inset;
+    border-width: 2px 0px 0px 0px;
+    color:rgb(211, 211, 211);
+    font-family: 'Syne Mono', monospace;
+    text-shadow: rgb(0, 0, 0) -1px 2px 2.5px;
+}
+ 
+.footer a {
+   color:rgb(211, 211, 211);
+   text-decoration: none; 
+   padding-right: 5px  
+}
+
+@media only screen and (max-width: 400px) {
+    [class*="footer"] {
+        font-size: 10px;
+      
+    }
+}
+
+/******************************** END: STYLING FOR FOOTER ********************************/
+
+
+
+
+
+/******************************** BEGIN: TWINKLING STARS ********************************/
+
+
+@media only screen and (max-width: 1220px) {
+    /* Site not meant for mobile access yet... */
+    [class*="star-"] {
+      display: none;
+    }
+    }
+  
+  .stars {
+      background-color: white;
+      height: 1.5px;
+      width: 1.5px;
+      border-radius: 50%;
+      animation-iteration-count: infinite;
+      position:absolute;
+      animation-name: twinkle;
+    }
+    
+    @keyframes twinkle {
+      20% {   transform: scale(1.8);   }
+      40% {   transform: scale(1.0);   }
+      60% {   transform: scale(2.5);   }
+      80% {   transform: scale(1.5);   }
+    }
+  
+    .star-1 {
+      margin-top: 15px;
+      margin-left: 81%;
+      animation-duration: 9s;
+    }
+  
+    .star-2 {
+      margin-top: 35px;
+      margin-left: 86%;
+      animation-duration: 11s;
+    }
+  
+    .star-3 {
+      margin-top: 65px;
+      margin-left: 77%;
+      animation-duration: 7s;
+    }
+  
+    .star-4 {
+      margin-top: 85px;
+      margin-left: 84%;
+      animation-duration: 11s;
+    }
+  
+    .star-5 {
+      margin-top: 125px;
+      margin-left: 83%;
+      animation-duration: 13s;
+    }
+  
+    .star-6 {
+      margin-top: 165px;
+      margin-left: 94%;
+      animation-duration: 12s;
+    }
+  
+    .star-7 {
+      margin-top: 180px;
+      margin-left: 89%;
+      animation-duration: 6s;
+    }
+  
+/******************************** END: TWINKLING STAR ********************************/  
+
+
+
+/* DELETE WHEN READY - DEVELOPMENT SHORTCUTS ONLY */
+
+
+.blue {
+    background-color: rgba(0, 0, 255, 0.20);
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.20);
+}
+
+.gren {
+    background-color: rgba(0, 128, 0, 0.20);
+} 
+
+.yellow {
+    background-color: rgba(255, 255, 0, 0.20);
+}

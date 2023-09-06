@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Eden - The Nexus</title>
+    
+    <link rel="stylesheet"  href="FluxEdenBaseStyle.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" >
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    
+</head>
+
+
+<body class="class">
+
+    <!-- Section for Loading Audio -->
+    <audio id="clickSound" preload="auto" >
+        <source src="sounds/click.wav" type="audio/wav" >
+        Your browser does not support the audio element.    
+    </audio>
+    <audio id="openingSound" preload="auto">
+        <source src="sounds/open.wav" type="audio/wav" >
+    </audio>
+    <!-- End Audio Load Section -->
+   
+    <div class="star-1 stars"></div>
+    <div class="star-2 stars"></div>
+    <div class="star-3 stars"></div> 
+    <div class="star-4 stars"></div>
+    <div class="star-5 stars"></div>
+    <div class="star-6 stars"></div>
+    <div class="star-7 stars"></div>
+
+  
+
+    <nav class="header navConsole">
+        <div class="logo">
+            <!--<img src="pictures/logo.png" id="logo" alt="FluxEden Logo" /> -->
+        </div>
+        
+        <!-- ADDITIONAL MENU BOXES FOR NAVIGATION WITHIN CURRENT SECTION
+        <div class="box01"> </div>
+
+        <div class="box02"> </div>
+
+        <div class="box03"> </div>
+        -->
+
+        <div class="mainMenu"> <!-- Login/Account, Home(Nexus), FluxEden RPG Section, and Contact -->
+            <a onclick="toggleAudio()"><p class="menuLines secretAudio" ></p></a>
+            <p class="menuLines expandingMenuLine" id="dropDown" >
+                <a href="index.html"class="menuLink" onmouseover="playWave2()">Nexus</a><br/>
+                <a href="FluxEdenRPG.html"class="menuLink" onmouseover="playWave2()">RPG</a><br/>
+                <p class="menuLines"></p>
+        </div>    
+    </nav>
+
+    <aside class="leftSide">
+
+    </aside>
+
+    <main class="main">
+      Hello World!
+    </main>
+
+    <aside class="rightSide">
+        
+    </aside>
+
+        <!-- Footer Area for legal and important link summary -->
+        <footer class="footer">
+            <div style="float: left;">
+                &copy; 2023 - Flux Eden
+            </div>
+            <div style="float: right;">
+                <a href="#" class="backToTop" onclick="backToTop()">[ Back to Top ]</a>
+            </div>
+        </footer>
+
+</body>
+
+
+
+<script src="FluxEdenBaseScript.js"></script>
+
+
+
+
+</html>
