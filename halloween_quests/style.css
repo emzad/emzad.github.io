@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base font size using viewport width */
+:root {
+    --base-font-size: 2.5vw;
+    
+ 
+  }
+
+.landing-container {
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 1;
+}
+
+.banner-column {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-column::after {
+    content: '';
+    width: 250%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, black, black);
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: bannerAnim 3s linear forwards;
+}
+
+@keyframes bannerAnim {
+    0% {right: 0;}
+    100% {right: -250%;}
+}
+
+.main-banner {
+    border-top: 5px solid #9c762e;
+    border-bottom: 5px solid #8b5607;
+}
+
+.banner-column h1 {    
+    background-image: linear-gradient(to bottom, #9c762e, #885200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Nothing You Could Do", cursive;
+    margin-bottom: 5px;
+    color: black;
+    display: inline;
+}
+
+.banner-column h2 {    
+    background-image: linear-gradient(to bottom,  #9c762e, #885200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Nothing You Could Do", cursive;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+.introduction {    
+    font-family: "Nothing You Could Do", cursive;
+    top: 50px;
+    margin-bottom: 5px;
+    display: inline;
+    color: #7e7334
+}
+
+.button-column button {
+    width: 50vw;
+    padding: 10px;
+    background: linear-gradient(to bottom,  #9c762e, #885200);
+    font-family: "Nothing You Could Do", cursive;
+    font-size: var(--base-font-size);
+    letter-spacing: 2px;
+    color: black;
+    border: none;
+    outline: none;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    overflow: hidden;
+    animation: buttonAnim 1s 2.5s backwards;
+    transition: all .5s;
+}
+
+.firstButton {
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.secondButton {
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.thirdButton {
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.banner-column button:hover {
+    text-shadow: 6px 2px 4px rgba(0, 0, 0, .4);
+}
+     /*
+    transform: perspective(500px) rotateY(15deg);
+    text-shadow: -6px 3px 2px rgba(0, 0, 0, .4);
+    background: linear-gradient(to left, #4f3a14, #a67d30);
+}
+
+@keyframes buttonAnim {
+ 0% {opacity: 0;}
+ 100% {opacity: 1;}
+}
+*/
+.banner-column button::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, transparent, white, transparent); */
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: skew(-30deg);
+    transition: left .5s;
+}
+
+.banner-column button:hover::before {
+    left: 100%;
+}
+
+
+.werewolf-container {
+
+    overflow: hidden;
+   /* opacity: 0;*/
+   /* transition: opacity 2s;*/
+   display: none;
+    background-color: black; 
+    background-size: cover;
+}
+
+.werewolf-banner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@keyframes slideshow {
+    0% {left: 0}
+    10% {left: 0}
+    15% {left: -100%}
+    25% {left: -100%}
+    30% {left: -200%}
+    40% {left: -200%}
+    45% {left: -300%}
+    55% {left: -300%}
+    60% {left: -200%}
+    70% {left: -200%}
+    75% {left: -100%}
+    85% {left: -100%}
+    90% {left: -0%}
+
+}
+
+
+
+.slide {
+    width: 100%;
+    height: 100vh;
+}
+/*
+.slide:nth-child(1) {
+    background: linear-gradient(100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent), url(images/vitruvian.jpg) no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(2) {
+    background: linear-gradient(100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent),url(images/new-york.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(3) {
+    background: linear-gradient(100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent),url(images/rome.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(4) {
+    background: linear-gradient(100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent),url(images/tokyo.jpg) center no-repeat;
+    background-size: cover;
+}
+*/
+.content {
+    width: 500px;
+    position: relative;
+    top: 35%;
+    left: 5%;
+}
+
+.content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.content p {
+    font-family: 'Dosis', sans-serif;
+    color: #ccc;
+}
+
+.content button {
+    width: 130px;
+    padding: 10px 10px 0 0;
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 350;
+    font-size: var(--base-font-size);
+    letter-spacing: 1px;
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+
+}
+
+.content i {
+    margin-left: 8px;
+}
+
+body {
+  font-size: var(--base-font-size);
+}
+
+/* Responsive adjustments for better readability */
+@media (min-width: 200px) {
+  :root {
+    --base-font-size: 3vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --base-font-size: 2.5vw;
+  }
+}
+
+
+
+
+
+/*
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+
+  }
+  
+  .card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    border: solid;
+  }
+  
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+*/
+
